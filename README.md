@@ -1,8 +1,48 @@
-# React + Vite
+<!-- @format -->
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<!-- @format -->
 
-Currently, two official plugins are available:
+<div align="center">
+  
+<!-- <img screenshot of page/> -->
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<img src="[placeholder]" alt="memory-card-game" width="50%" style="border-radius: 10px" />
+
+</div>
+
+# Memory Card Game
+
+## 👨‍💻About this Project
+
+This is my second React project, using a Rick and Morty API to create a memory card game.
+
+## Instructions
+
+- 1
+- 2
+- 3
+- ...
+
+## Additional Functionality / Or Updates to be made
+
+- a
+- b
+- c
+
+<!-- Pseudo Code -->
+
+<!--
+
+1. Container for page - Grid layout
+2. Container for cards - Grid layout
+3. Card is it's own container to present rick and morty information - flex layout
+4. Rotate all cards on selection and then turn back
+4. LOOK AT MATERIAL UI
+
+
+2.
+
+3.
+
+
+ -->
