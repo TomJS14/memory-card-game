@@ -1,3 +1,5 @@
+/** @format */
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -39,4 +41,20 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.cardsContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.cardButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cardImage {
+  width: 100px;
+  height: 100px;
 }
