@@ -9,7 +9,7 @@
 
 
 
-<img src="https://github.com/TomJS14/memory-card-game/assets/133436558/0b260fdf-c24d-4b8a-85a5-c1b0c69a55b0" alt="memory-card-game" width="50%" style="border-radius: 10px" />
+<img src="https://github.com/TomJS14/memory-card-game/assets/133436558/0b260fdf-c24d-4b8a-85a5-c1b0c69a55b0" alt="memory-card-game" width="100%" style="border-radius: 10px" />
 
 </div>
 
