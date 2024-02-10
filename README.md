@@ -18,31 +18,13 @@ This is my second React project, using a Rick and Morty API to create a memory c
 
 ## Instructions
 
-- 1
-- 2
-- 3
+- 1. Select your difficulty - Stupid is 100 cards!
+- 2. Don't select the same card twice or you lose
+- 3. Toggle music and help using the buttons provided
 - ...
 
 ## Additional Functionality / Or Updates to be made
 
-- a
-- b
-- c
-
-<!-- Pseudo Code -->
-
-<!--
-
-1. Container for page - Grid layout
-2. Container for cards - Grid layout
-3. Card is it's own container to present rick and morty information - flex layout
-4. Rotate all cards on selection and then turn back
-4. LOOK AT MATERIAL UI
-
-
-2.
-
-3.
-
-
- -->
+- Update styling of rows
+- Update / improve image quality and styling
+- Refactor jsx & css
