@@ -1,39 +1,44 @@
 /** @format */
 
-import { useState, useEffect } from "react";
-import GetCards from "./Cards";
-
-import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
-
-import "./App.css";
+import { React, useState, useEffect } from "react";
+import GetCards from "./components/Cards";
+import DifficultySelection from "./components/DifficultySelection";
+import Footer from "./components/Footer";
+import LoadingFace from "./components/LoadingPage";
 
 function App() {
   const [loading, setLoading] = useState(false);
+  const [difficulty, setDifficulty] = useState("");
+
+  const handleDifficultySelected = (diff) => {
+    setDifficulty(diff);
+  };
 
   useEffect(() => {
-    /* Change this to load while fetching instead of a timeout */
+    /* Temporary Change this to load while fetching instead of a timeout */
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 2500);
+    }, 3800);
   }, []);
 
   return (
     <>
       <div className="app">
         {loading ? (
-          <ClimbingBoxLoader
-            color={"yellow"}
-            loading={loading}
-            size={50}
-            aria-label="Loading pinner"
-            data-testid="loader"
-          />
+          <LoadingFace />
         ) : (
-          <div className="gameContainer">
-            <GetCards />
+          <div>
+            {!difficulty ? (
+              <DifficultySelection
+                onDifficultySelected={handleDifficultySelected}
+              />
+            ) : (
+              <GetCards difficulty={difficulty} />
+            )}
           </div>
         )}
+        <div className="footer">{!loading ? <Footer></Footer> : ""}</div>
       </div>
     </>
   );

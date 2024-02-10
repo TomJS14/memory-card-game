@@ -1,0 +1,265 @@
+/** @format */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  margin: 0 auto;
+  text-align: center;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-image: url("../assets/RickAndMortyBackground.jpg");
+  background-size: cover;
+  background-color: #161616;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* @media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} */
+
+body {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 95vw;
+  min-height: 100vh;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.4em;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: #85f26e;
+}
+
+/* Specific */
+
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.gameContainer {
+  width: 100%;
+  height: 100%;
+}
+
+.pageHeader {
+  outline: 1px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  align-self: flex-start;
+}
+
+.titleContainer,
+.scoreContainer {
+  padding-bottom: 5px;
+  padding-right: 5px;
+}
+
+.scoreContainer {
+  background-color: #1a1a1a;
+  text-align: left;
+  border: 3px solid #85f26e;
+  border-radius: 10px;
+  padding: 5px;
+  -webkit-box-shadow: -4px 1px 25px -13px rgb(224, 216, 224);
+  -moz-box-shadow: -4px 1px 25px -13px rgb(224, 216, 224);
+  box-shadow: -4px 1px 25px -13px rgb(224, 216, 224);
+}
+
+.titleImage {
+  height: 200px;
+  width: 400px;
+}
+
+.titleHeader {
+  color: #85f26e;
+}
+
+.scoreHeader {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #85f26e;
+}
+
+.cardButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cardsContainer {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 100vw;
+  max-height: 100%;
+  justify-content: center;
+}
+
+.card {
+  max-width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: transform 1500ms;
+  transform-style: preserve-3d;
+  margin-bottom: 15px;
+}
+
+.cardFront,
+.cardBack {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.cardBack {
+  background-size: 100% 100%;
+  background-position: center;
+  background-color: #1a1a1a;
+  transform: rotateY(-180deg) translateY(20px);
+}
+
+.cardImage {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.MuiDialog-container {
+  background-color: rgba(234, 238, 234, 0.149);
+}
+
+@media only screen and (min-width: 1000px) {
+  .scoreHeader {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #85f26e;
+  }
+
+  .card {
+    max-width: 300px;
+    height: 300px;
+  }
+}
+
+@media only screen and (max-width: 813px) {
+  :root {
+    background-size: 100% 100%;
+  }
+
+  .cardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .card,
+  .cardBack,
+  .cardFront,
+  .cardImage {
+    width: 20vw;
+    height: 20vw;
+  }
+
+  .cardImage {
+    width: 20vw;
+    height: 20vw;
+    border-radius: 5px;
+  }
+
+  .pageHeader {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .titleContainer,
+  .scoreContainer {
+    padding: 10px;
+  }
+
+  .titleImage {
+    height: auto;
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .scoreHeader {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .titleHeader {
+    font-size: 0.8rem;
+  }
+
+  .scoreHeader {
+    font-size: 0.8rem;
+  }
+
+  .cardsContainer {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    height: 100%;
+  }
+
+  .card,
+  .cardBack,
+  .cardFront,
+  .cardImage {
+    width: 20vw;
+    height: 20vw;
+  }
+
+  .card {
+    margin-bottom: 20px;
+  }
+}

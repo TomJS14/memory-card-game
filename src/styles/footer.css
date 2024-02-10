@@ -1,0 +1,20 @@
+/** @format */
+
+.footer {
+  display: flex;
+  margin-top: 5px;
+  gap: 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.footerButtons {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.footerButtons > Button {
+  margin: 50px;
+}

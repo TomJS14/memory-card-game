@@ -1,0 +1,22 @@
+/** @format */
+
+.loadingFace {
+  flex: 1;
+  height: 200px;
+  border-radius: 45px;
+}
+
+.loadingText {
+  font-size: 1.5rem;
+}
+
+.loadingContainer {
+  background-color: #1a1a1a;
+  text-align: center;
+  border: 3px solid #85f26e;
+  border-radius: 10px;
+  padding: 5px;
+  -webkit-box-shadow: -4px 1px 25px -13px rgb(224, 216, 224);
+  -moz-box-shadow: -4px 1px 25px -13px rgb(224, 216, 224);
+  box-shadow: -4px 1px 25px -13px rgb(224, 216, 224);
+}
