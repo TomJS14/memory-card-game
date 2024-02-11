@@ -177,6 +177,11 @@ button:hover {
   background-color: rgba(234, 238, 234, 0.149);
 }
 
+.github {
+  font-size: 1.4rem;
+  color: white;
+}
+
 @media only screen and (min-width: 1000px) {
   .scoreHeader {
     font-size: 1.8rem;
